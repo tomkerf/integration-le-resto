@@ -1,0 +1,95 @@
+header {
+    background: url(/assets/img/bg-slider-06.jpg) center/cover;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        align-items: center;
+        width: 85%;
+        margin: 0 auto;
+        height: 100px;
+
+        h4 {
+            margin-left:60px;
+            font-family: "allura";
+            font-size: 3rem;
+            width: 150px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 80%;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+
+            li {
+
+                &:hover {
+                    cursor: pointer;
+                    position: relative;
+                }
+
+                &:hover:after {
+                    content: "";
+                    background: whitesmoke;
+                    height: 1px;
+                    width: 100%;
+                    position: absolute;
+                    top: 30px;
+                    left: 0;
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            width: 100px;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+    }
+
+    .header-container {
+        margin-top: -100px;
+
+        h2 {
+            margin-top: -20px;
+            font-family: $font3;
+            font-size: 4rem;
+            font-weight: 500;
+            color: #A57245;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            margin-top: -40px;
+            margin-bottom: 30px;
+            font-family: $font2;
+            letter-spacing: 10px;
+            font-size: 4.5rem;
+        }
+
+        img {
+            width: 35px;
+            margin-bottom: 50px;
+        }
+        
+        p {
+            text-transform: uppercase;
+            letter-spacing: 8px;
+        }
+    }
+}
